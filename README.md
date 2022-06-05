@@ -1,4 +1,4 @@
-# JsonPowerDB
+# CRUD operations in JsonPowerDB
 This project shows use of basic CRUD operation of JsonPowerDB
 
 ## About JsonPowerDB:
