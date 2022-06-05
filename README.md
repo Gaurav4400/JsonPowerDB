@@ -19,6 +19,16 @@ Using JsonPowerDB is equally Easy and Fast when used with Server Side programmin
 - Enriched by a pluggable API Framework - A developer can develop a pluggable API and plugin into any of our cloud JPDB instance.
 - In-built support to query on multiple JPDB databases.
 
+
 ## Screenshots
 
-![App Screenshot](https://github.com/Gaurav4400/JsonPowerDB/blob/b923108ad35e8adfc70d8c800df32c3751b98e18/assets/index.jpeg)
+![Index page](https://github.com/Gaurav4400/JsonPowerDB/blob/b923108ad35e8adfc70d8c800df32c3751b98e18/assets/index.jpeg)
+
+![Insert data](https://github.com/Gaurav4400/JsonPowerDB/blob/7e16013799b00a1629cc7e26e96db91fc632e3c9/assets/insert.jpeg)
+
+![Show data](https://github.com/Gaurav4400/JsonPowerDB/blob/7e16013799b00a1629cc7e26e96db91fc632e3c9/assets/show.jpeg)
+
+![Update data](https://github.com/Gaurav4400/JsonPowerDB/blob/7e16013799b00a1629cc7e26e96db91fc632e3c9/assets/update.jpeg)
+
+![Delete data](https://github.com/Gaurav4400/JsonPowerDB/blob/7e16013799b00a1629cc7e26e96db91fc632e3c9/assets/delete.jpeg)
+
