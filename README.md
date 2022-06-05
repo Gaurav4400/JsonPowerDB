@@ -22,7 +22,7 @@ Using JsonPowerDB is equally Easy and Fast when used with Server Side programmin
 
 ## Screenshots
 
-![Visualize page](https://github.com/Gaurav4400/JsonPowerDB/blob/b923108ad35e8adfc70d8c800df32c3751b98e18/assets/Visualize.jpeg)
+![Visualize page](https://github.com/Gaurav4400/JsonPowerDB/blob/0051ca26bb516cf55d78f39737f0feecafb0f220/assets/Visualize.jpeg)
 
 ![Index page](https://github.com/Gaurav4400/JsonPowerDB/blob/b923108ad35e8adfc70d8c800df32c3751b98e18/assets/index.jpeg)
 
