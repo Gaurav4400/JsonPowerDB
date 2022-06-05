@@ -1,5 +1,5 @@
 # CRUD operations in JsonPowerDB
-This project shows use of basic CRUD operation of JsonPowerDB
+This project shows use of basic CRUD operation of JsonPowerDB using a website where we can insert, update, show and delete employee data from database using simple JsonPowerDB functions which are predefined in its library.
 
 ## About JsonPowerDB:
 JsonPowerDB is a Database Server with Developer friendly REST API services. It's a High Performance, Light Weight, Ajax Enabled, Serverless, Simple to Use, Real-time Database.
