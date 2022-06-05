@@ -20,7 +20,7 @@ Using JsonPowerDB is equally Easy and Fast when used with Server Side programmin
    - In-built support to query on multiple JPDB databases.
 
 
-## Screenshots
+## Illustrations
 
 ![Visualize page](https://github.com/Gaurav4400/JsonPowerDB/blob/0051ca26bb516cf55d78f39737f0feecafb0f220/assets/Visualize.jpeg)
 
