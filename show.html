@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>JPDB</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="http://login2explore.com/jpdb/resources/js/0.0.3/jpdb-commons.js"></script>
+        <style>
+            .link{
+                border: 2px solid black;
+                background-color: yellow;
+                margin-left: 5%;
+            }
+        </style>
+    </head>
+    <body>
+        <center><a class="link" href="index.html"> HOME</a>
+            <a class="link" href="insert.html"> INSERT DATA</a>
+            <a class="link" href="update.html">UPDATE DATA</a>
+            <a class="link" href="show.html">SHOW DATA</a>
+            <a class="link" href="delete.html">DELETE DATA</a></center> <br><br>
+
+    <center><h1>Show Data</h1></center>
+    <center><input id="emp_id" maxlength="50" placeholder="emp id" name="emp id" type="text" /><br><br>
+           <input type="button" value="SHOW DATA" onclick="showData();"/>
+    </center> <br><br>
+    <center id="show"></center>
+    <script>
+        function resetForm() {
+            $("#emp_id").val("")
+            $("#emp_id").focus();
+        }
+        function showData(){
+            var token = "90938936|-31949289328795679|90941141";
+            var dbname = "SAMPLE";
+            var relationName = "EMP-REL";
+            var id = document.getElementById("emp_id").value;
+            var jsonStr = { empId : id};
+
+            if (jsonStr === "") {
+                document.getElementById("temp").innerHTML = "id not found";
+                return; 
+            }
+
+            var reqString = createGETRequest(token, dbname, relationName, JSON.stringify(jsonStr));
+            alert(reqString);
+           
+            jQuery.ajaxSetup({async: false});
+            var resultObj = executeCommandAtGivenBaseUrl(reqString,"http://api.login2explore.com:5577", "/api/irl");
+            jQuery.ajaxSetup({async: true});
+            var data = JSON.stringify(resultObj);
+            var res = data.split("\"");
+            var mainContainer = document.getElementById("show");
+
+            mainContainer.innerHTML =  "[ID    : " + res[6].replace("\\","] ") + "<br>"+
+                                       "[Name  : " + res[10].replace("\\", "] ")+"<br>"+
+                                       "[Email : " + res[14].replace("\\","] "); 
+                                       
+            resetForm();
+            
+        }
+    </script>
+    </body>
+</html>

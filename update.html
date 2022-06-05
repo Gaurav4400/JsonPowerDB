@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>JPDB</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="http://login2explore.com/jpdb/resources/js/0.0.3/jpdb-commons.js"></script>
+        <style>
+            .link{
+                border: 2px solid black;
+                background-color: yellow;
+                margin-left: 5%;
+            }
+        </style>
+    </head>
+    <body>
+        <center><a class="link" href="index.html"> HOME</a>
+            <a class="link" href="insert.html"> INSERT DATA</a>
+            <a class="link" href="update.html">UPDATE DATA</a>
+            <a class="link" href="show.html">SHOW DATA</a>
+            <a class="link" href="delete.html">DELETE DATA</a></center> <br><br>
+
+
+    <center><h1>Update Data</h1></center>
+    <center><input id="emp_id" maxlength="50" placeholder="record no." name="emp_id" type="text" /><br><br>
+        <p>You can change your email only.</p>
+        <input id="email" maxlength="50" placeholder="email" name="password" type="text" /><br><br>
+        <input type="button" value="UPDATE DATA" onclick="updateData();"/></center>
+    <p id="show"></p>
+    <script>
+        function updateData(){
+            var token = "90938936|-31949289328795679|90941141";
+            var dbname = "SAMPLE";
+            var relationName = "EMP-REL";
+            var id = parseInt(document.getElementById("emp_id").value);
+            var mail = document.getElementById("email").value;
+            
+            var jsonObj = {
+                empEmail: mail,
+            };
+            var reqString = createUPDATERecordRequest(token, JSON.stringify(jsonObj), dbname, relationName, id);
+            alert(reqString);
+            jQuery.ajaxSetup({async: false});
+            var resultObj = executeCommandAtGivenBaseUrl(reqString, "http://api.login2explore.com:5577", "/api/iml");
+            jQuery.ajaxSetup({async: true});
+            alert(JSON.stringify(resultObj));
+            
+        }
+    </script>
+    </body>
+</html>
