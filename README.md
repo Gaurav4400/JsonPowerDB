@@ -34,3 +34,8 @@ Using JsonPowerDB is equally Easy and Fast when used with Server Side programmin
 
 ![Delete data](https://github.com/Gaurav4400/JsonPowerDB/blob/7e16013799b00a1629cc7e26e96db91fc632e3c9/assets/delete.jpeg)
 
+## Sources
+- [Introduction to JsonPowerDB](https://login2explore.com/jpdb/#introduction-jpdb)
+- [JsonPowerDB documentation](https://login2explore.com/jpdb/docs.html)
+- [JsonPowerDB libraries](https://login2explore.com/jpdb/resources/js/0.0.3/jpdb-commons.js)
+
