@@ -9,15 +9,15 @@ Easy and fast to develop database applications without using any server side pro
 Using JsonPowerDB is equally Easy and Fast when used with Server Side programming like Java, .NET, Python or PHP etc.
 
 
-### Benefits of using JsonPowerDB 
- - Simplest way to retrieve data in a JSON format. 
- - Schema-free, Simple to use, Nimble and In-Memory database.
- - It is built on top of one of the fastest and real-time data indexing engine- PowerIndeX.
- - It is low level (raw) form of data and is also human readable.
-- It helps developers in faster coding, in-turn reduces development cost.
-- Multiple security layers.
-- Enriched by a pluggable API Framework - A developer can develop a pluggable API and plugin into any of our cloud JPDB instance.
-- In-built support to query on multiple JPDB databases.
+   ### Benefits of using JsonPowerDB 
+   - Simplest way to retrieve data in a JSON format. 
+   - Schema-free, Simple to use, Nimble and In-Memory database.
+   - It is built on top of one of the fastest and real-time data indexing engine- PowerIndeX.
+   - It is low level (raw) form of data and is also human readable.
+   - It helps developers in faster coding, in-turn reduces development cost.
+   - Multiple security layers.
+   - Enriched by a pluggable API Framework - A developer can develop a pluggable API and plugin into any of our cloud JPDB instance.
+   - In-built support to query on multiple JPDB databases.
 
 
 ## Screenshots
